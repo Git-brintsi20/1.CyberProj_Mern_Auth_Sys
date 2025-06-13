@@ -242,7 +242,7 @@ We welcome contributions that enhance security implementations, improve educatio
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
