@@ -3,6 +3,11 @@
 > A comprehensive collection of cybersecurity applications demonstrating secure development practices, vulnerability assessment, and privacy-focused solutions built with modern web technologies.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Cybersecurity](https://img.shields.io/badge/Focus-Cybersecurity-red.svg)](https://owasp.org/)
+[![OWASP](https://img.shields.io/badge/OWASP-Top%2010-orange.svg)](https://owasp.org/Top10/)
+[![JWT](https://img.shields.io/badge/Auth-JWT-purple.svg)](https://jwt.io/)
+[![Encryption](https://img.shields.io/badge/Encryption-AES--256-blue.svg)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+[![Security](https://img.shields.io/badge/Security-Penetration%20Testing-darkred.svg)](https://www.sans.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-v18+-green.svg)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-v18+-blue.svg)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-v6+-green.svg)](https://mongodb.com/)
@@ -160,7 +165,7 @@ Git
 ### Quick Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cyber-projects.git
+git clone https://github.com/Git-brintsi20/cyber-projects.git
 cd cyber-projects
 
 # Navigate to specific project
@@ -258,8 +263,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact & Support
 
 - **Issues:** [GitHub Issues](https://github.com/Git-brintsi20/cyber-projects/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Git-brintsi20/cyber-projects/discussions)
-- **Security Reports:** Please report security issues privately via email
+- **Security Reports:** Please report security issues privately via email 
 
 ---
 
