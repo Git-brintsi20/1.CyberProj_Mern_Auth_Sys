@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -22,3 +23,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+=======
+Basic MERN Auth System/backend/node_modules
+Basic MERN Auth System/backend/.env
+Basic MERN Auth System/frontend/node_modules
+Basic MERN Auth System/frontend/.env
+# Ignore Python specific files/folders in web crawler project
+web crawler project/venv/
+web crawler project/__pycache__/
+web crawler project/*.pyc
+>>>>>>> 227664f579d03ad337973490fc3cb85b187d14e9
