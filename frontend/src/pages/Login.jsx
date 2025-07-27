@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { AppContent } from '../context/AppContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-
+import Turnstile from 'react-turnstile';
 const Login = () => {
     const navigate = useNavigate();
     const { backendUrl, setIsLoggedIn, getUserData } = useContext(AppContent);
@@ -19,6 +19,8 @@ const Login = () => {
         number: false,
         special: false,
     });
+
+    const [turnstileToken, setTurnstileToken] = useState('');
 
     const checkPasswordStrength = (password) => {
         const length = password.length >= 6;
@@ -48,6 +50,11 @@ const Login = () => {
     const onSubmitHandler = async (e) => {
         e.preventDefault();
 
+           if (!turnstileToken) {
+        toast.error('Please wait for the security check to complete.');
+        return;
+    }
+
         if (!email || !password) {
             toast.error('Please enter both email and password.');
             return;
@@ -66,6 +73,7 @@ const Login = () => {
                     name,
                     email,
                     password,
+                     turnstileToken: turnstileToken,
                 });
 
                 if (data.success) {
@@ -78,6 +86,7 @@ const Login = () => {
                 const { data } = await axios.post(`${backendUrl}/api/auth/login`, {
                     email,
                     password,
+                     turnstileToken: turnstileToken,
                 });
 
                 if (data.success) {
@@ -226,6 +235,12 @@ const Login = () => {
                             Forgot password?
                         </p>
                     )}
+                         <div className="my-4 flex justify-center">
+                        <Turnstile
+                            sitekey={import.meta.env.VITE_CLOUDFLARE_TURNSTILE_SITE_KEY}
+                            onVerify={(token) => setTurnstileToken(token)}
+                        />
+                    </div>
 
                     <button className="w-full py-3 rounded-full bg-gradient-to-r from-plant-green-medium to-plant-green-dark text-white font-primary font-medium hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                         {state}
