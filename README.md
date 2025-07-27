@@ -1,9 +1,16 @@
 <<<<<<< HEAD
 # MERN Secure Authentication System
+### Project 1 of the "Secure by Design" Series
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Tech Stack](https://img.shields.io/badge/Tech-MERN%20Stack-2ea44f)
 ![Security](https://img.shields.io/badge/Security-Hardened-red)
+
+> **Cybersecurity in Practice: Part 1 - Secure Authentication**
+>
+> This repository marks the first entry in my "Cybersecurity in Practice" series, where I build and document real-world applications with a security-first approach. This installment focuses on implementing a defense-in-depth strategy for user authentication and session management in a modern web stack.
+
 
 A security-focused, full-stack authentication system built on the MERN stack. This project serves as a boilerplate for building robust applications, implementing a **defense-in-depth** strategy with modern security controls against common web vulnerabilities.
 
