@@ -31,11 +31,13 @@ const corsOptions = {
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors(corsOptions));
 app.use(cors({ credentials: true, origin: allowOrigins })); // Adjust origin as needed
 
 app.get('/', (req, res) => res.send("API WORKING"));
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter); // Use userRouter
+
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
