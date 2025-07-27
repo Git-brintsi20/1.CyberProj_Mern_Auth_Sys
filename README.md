@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # MERN Secure Authentication System
 ### Project 1 of the "Secure by Design" Series
 
